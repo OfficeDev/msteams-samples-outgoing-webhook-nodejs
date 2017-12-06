@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-const sharedSecret = "+ZaRRMC8+mpnfGaGsBOmkIFt98bttL5YQRq3p2tXgcE=";
+const sharedSecret = "<outgoing webhook secret>"; // e.g. "+ZaRRMC8+mpnfGaGsBOmkIFt98bttL5YQRq3p2tXgcE="
 const bufSecret = Buffer(sharedSecret, "base64");
 
 var http = require('http');
@@ -7,10 +7,12 @@ var PORT = process.env.port || process.env.PORT || 8080;
 
 http.createServer(function(request, response) { 
 	var payload = '';
+	// Process the request
 	request.on('data', function (data) {
 		payload += data;
 	});
 	
+	// Respond to the request
 	request.on('end', function() {
 		try {
 			// Retrieve authorization HMAC information
