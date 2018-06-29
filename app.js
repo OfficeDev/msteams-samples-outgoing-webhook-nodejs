@@ -30,7 +30,7 @@ http.createServer(function(request, response) {
 			response.writeHead(200);
 			if (msgHash === auth) {
 				var receivedMsg = JSON.parse(payload);
-				var responseMsg = '{ "type": "message", "text": "You typed: ' + receivedMsg.text + '" }';	
+				var responseMsg = JSON.stringify({ type: "message", text: "You typed: '" + receivedMsg.text + "'" });	
 			} else {
 				var responseMsg = '{ "type": "message", "text": "Error: message sender cannot be authenticated." }';
 			}
