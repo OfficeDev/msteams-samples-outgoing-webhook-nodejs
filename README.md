@@ -8,7 +8,7 @@ extensions:
   contentType: samples
   createdDate: 12/5/2017 6:03:13 PM
 ---
-# Overview
+# Microsoft Teams Outgoing Webhook Sample
 
 This project is an implementation of a very simple [Outgoing Webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/custom-bot) for Microsoft Teams. All it does is verify that what's sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it.
 
