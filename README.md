@@ -12,14 +12,14 @@ extensions:
 
 This project is an implementation of a very simple [Outgoing Webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/custom-bot) for Microsoft Teams. All it does is verify that what's sending messages matches the Outgoing Webhook that was created in Teams, and it echoes back whatever is sent to it.
 
-# Steps to run locally
+## Steps to run locally
 
-## Prerequisites
+### Prerequisites
 
 * Install Git for windows: https://git-for-windows.github.io/
 
 * Clone this repo:
-  ```
+  ```bash
   git clone https://github.com/OfficeDev/msteams-samples-outgoing-webhook-nodejs.git
   ```
 
@@ -41,7 +41,7 @@ This project is an implementation of a very simple [Outgoing Webhook](https://do
 
 * In Microsoft Teams, in any channel in the team in which you created the Outgoing Webhook, you can type `@<botname> hello` (or anything else you like) and it will echo back its name and what you typed.
 
-# Contributing
+## Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
