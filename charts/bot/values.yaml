@@ -50,7 +50,7 @@ ingress:
   hosts:
     - host: hq.know-ops.com
       paths:
-      - "/api/messages"
+      - "/"
   tls:
   - secretName: demo-teams-bot-tls
     hosts:
