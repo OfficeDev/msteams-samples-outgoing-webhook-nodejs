@@ -40,5 +40,19 @@ pipeline {
                 }
             }
         }
+
+        stage('Deploy Image') {
+            // when {
+            //     environment name: 'BRANCH_NAME', value: 'master'
+            // }
+
+            steps{
+                container('kubectl')
+                sh '''
+                    printenv | sort
+                    kubectl get pods -n demos
+                '''
+            }
+        }
     }
 }
